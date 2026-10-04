@@ -23,14 +23,10 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libsqlite3.so:databases/sqlite3 \
 		libzstd.so:archivers/zstd
 
-<<<<<<< HEAD
 MPROTECT_DISABLE=	bin/deno
 
-USES=		cargo cpe gmake llvm:min=21,build ninja:build pkgconfig python:build
-=======
 USES=		cargo cpe gmake llvm:min=21,build localbase:ldflags ninja:build \
 		pkgconfig python:build
->>>>>>> rad/freebsd/main
 USE_GITHUB=	yes
 GH_ACCOUNT=	denoland
 GH_TUPLE=	denoland:deno_lsp_benchdata:a787434:denolsp/tests/bench/testdata/lsp_benchdata \
