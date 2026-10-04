@@ -221,6 +221,7 @@
     SUBDIR += cmogstored
     SUBDIR += cmospwd
     SUBDIR += cni-dnsname
+    SUBDIR += cni-epair
     SUBDIR += colorize
     SUBDIR += conan
     SUBDIR += condy
@@ -414,6 +415,7 @@
     SUBDIR += firstboot-freebsd-update
     SUBDIR += firstboot-pkg-upgrade
     SUBDIR += firstboot-pkgs
+    SUBDIR += fjord
     SUBDIR += flasher
     SUBDIR += flashrom
     SUBDIR += flexbackup

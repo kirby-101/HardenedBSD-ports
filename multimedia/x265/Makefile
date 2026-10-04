@@ -1,5 +1,5 @@
 PORTNAME=	x265
-PORTVERSION=	4.1
+PORTVERSION=	4.2
 CATEGORIES=	multimedia
 MASTER_SITES=	https://bitbucket.org/multicoreware/x265_git/downloads/ \
 		http://ftp.videolan.org/pub/videolan/x265/
@@ -71,9 +71,10 @@ CMAKE_ARGS+=	-DMAIN12:BOOL=true
 
 .if "${DEFAULT_DEPTH}" != "HI8P"
 CMAKE_ARGS+=	-DHIGH_BIT_DEPTH:BOOL=true
+.endif
+
 .if ${ARCH} == i386
 CMAKE_ARGS+=	-DENABLE_ASSEMBLY:BOOL=false
-.endif
 .endif
 
 CMAKE_OTHER_ARGS=	${CMAKE_ARGS:C/.*-D_END_CUSTOM_OPTIONS=1 +//W}
